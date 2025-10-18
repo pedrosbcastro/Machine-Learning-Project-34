@@ -1,0 +1,118 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "b97d6df3-bb91-423b-b9d1-115a6817040f",
+   "metadata": {},
+   "source": [
+    "<div style=\"text-align: center;\">\n",
+    "\n",
+    "# <a id='toc1_'></a>[MACHINE LEARNING PROJECT](#toc0_)\n",
+    "## <a id='toc1_'></a>[Deliverable #1](#toc0_)\n",
+    "\n",
+    "**<h3 align=\"center\">Cars 4 You: Expediting Car Evaluations with ML</h3>**\n",
+    "\n",
+    "<span style=\"font-size: 24px;\">Master in Data Science and Advanced Analytics</span>  \n",
+    "<span style=\"font-size: 24px;\">NOVA Information Management School</span>  \n",
+    "<span style=\"font-size: 20px;\"><i>Group 34</i></span>  \n",
+    "<span style=\"font-size: 20px;\">Fall/Spring Semester 2025-2026</span>\n",
+    "\n",
+    "</div>\n",
+    "\n",
+    "---\n",
+    "**Carolina Luz** | 20250409 | [20250409@novaims.unl.pt](mailto:20250409@novaims.unl.pt)  \n",
+    "**Margarida Quintino** | 20250411 | [20250411@novaims.unl.pt](mailto:20250411@novaims.unl.pt)  \n",
+    "**Pedro Castro** | 20250467 | [20250467@novaims.unl.pt](mailto:20250467@novaims.unl.pt)  \n",
+    "**Pedro Carrasqueira** | 20250488 | [20250488@novaims.unl.pt](mailto:20250488@novaims.unl.pt) "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3a5d36c7-0dad-49bf-bc82-a9e1ce8be4ee",
+   "metadata": {},
+   "source": [
+    "## 1. Import libraries"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "68ccec8b-e514-4d9e-9042-928d62646ab6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np\n",
+    "import pandas as pd\n",
+    "import matplotlib.pyplot as plt\n",
+    "import seaborn as sns\n",
+    "sns.set()\n",
+    "\n",
+    "# data partition\n",
+    "from sklearn.model_selection import train_test_split\n",
+    "\n",
+    "#filter methods\n",
+    "# spearman \n",
+    "# chi-square\n",
+    "import scipy.stats as stats\n",
+    "from scipy.stats import chi2_contingency\n",
+    "\n",
+    "#wrapper methods\n",
+    "from sklearn.linear_model import LogisticRegression\n",
+    "from sklearn.svm import SVC\n",
+    "from sklearn.feature_selection import RFE\n",
+    "\n",
+    "\n",
+    "# embedded methods\n",
+    "from sklearn.linear_model import LassoCV\n",
+    "\n",
+    "# ignore warnings\n",
+    "import warnings\n",
+    "warnings.filterwarnings('ignore')\n",
+    "\n",
+    "#set random seed for reproducibility\n",
+    "RSEED = 42\n",
+    "np.random.seed(RSEED)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9527a560-8533-4f78-bf30-7d3ac46a221c",
+   "metadata": {},
+   "source": [
+    "## 2. Import dataset"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "abd6769c-b71b-4883-9b6f-a7209eff2db7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "train_data = pd.read_csv(\"/work/train.csv\")\n",
+    "test_data = pd.read_csv(\"/work/test.csv\")"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
